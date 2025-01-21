@@ -8,9 +8,9 @@ export default function AuthCheck({ children }: { children: React.ReactNode }) {
   console.log(session, status);
 
   if (status === "loading") {
-    return <p>Loading...</p>;
+    return <>...</>;
   } else if (status === "unauthenticated") {
-    return <p>Access Denied</p>;
+    return <></>;
   } else {
     return <>{children}</>;
   }
