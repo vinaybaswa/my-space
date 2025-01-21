@@ -6,7 +6,13 @@ export default function NavMenu() {
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <Image src="/logo.svg" alt="logo" width={216} height={30} />
+        <Image
+          src="/logo.svg"
+          alt="logo"
+          width={216}
+          height={30}
+          priority={true}
+        />
       </Link>
       <ul className={styles.links}>
         <li>
