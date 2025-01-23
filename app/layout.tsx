@@ -26,12 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <AuthProvider>
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <NavMenu/>
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+          <NavMenu />
+          {children}
+        </body>
+      </html>
     </AuthProvider>
   );
 }
