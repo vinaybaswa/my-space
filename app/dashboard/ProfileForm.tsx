@@ -5,7 +5,7 @@ export function ProfileForm({ user }: any) {
   const updateUser = async (e: React.FormEvent<HTMLFormElement>) => {
     
     e.preventDefault();
-    console.log('Updating user...');
+    
     const formData = new FormData(e.currentTarget);
 
     const body = {
@@ -24,7 +24,6 @@ export function ProfileForm({ user }: any) {
     });
     
     await res.json();
-    console.log('User updated!', res);
   };
 
   return (
